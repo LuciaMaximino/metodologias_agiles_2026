@@ -34,13 +34,16 @@ Exit - Confirmar operación al usuario
 Proceso 1.2: Visualizar saldo e historial de movimientos - 4 PFC
 Movimiento - Descripción
 Entry - Seleccionar cuenta a consultar
-Read - Leer datos de saldo de la cuentaReadLeer historial de movimientos
+Read - Leer datos de saldo de la cuenta
+Read - Leer historial de movimientos
 Exit - Mostrar saldo e historial en pantalla
 
 Proceso 1.3: Realizar transferencia entre cuentas - 6 PFC
 Movimiento - Descripción
 Entry - Ingresar datos de la transferencia (cuenta origen, destino, monto)
-Read - Leer saldo de cuenta origenWriteActualizar saldo de cuenta origenWriteActualizar saldo de cuenta destino
+Read - Leer saldo de cuenta origen
+Write - Actualizar saldo de cuenta origen
+Write - Actualizar saldo de cuenta destino
 Write - Registrar movimiento en historial
 Exit - Mostrar confirmación de transferencia
 
@@ -107,7 +110,7 @@ Exit - Mostrar/exportar informe de progreso
 
 Total Módulo 3: 12 PFC
 
-Tamaño funcinal total (X): 41 PFC
+Tamaño funcional total (X): 41 PFC
 
 CANTIDAD DE PUNTOS DE FUNCIÓN QUE SE PUEDEN HACER EN UN MES
 Este proyecto tiene 3 módulos con funcionalidades de complejidad media-alta (gráficos, simulaciones, exportación de archivos, transferencias). Un equipo razonable sería:
